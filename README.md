@@ -29,7 +29,8 @@ SongShare is an iOS tweak that will automatically detect when you’ve copied a 
 ## Settings
 The available settings allow you to accept a prompt before the new link is copied, send a notification after the new link has been copied, only convert links while connected to Wi-Fi, and keep the original link in parentheses alongside the new link.
 
-[Download SongShare for Free from the Dynastic Repo](https://repo.dynastic.co/package/dev.jeffresc.songshare)
+## Downloading and Installing
+You can either [Download SongShare for Free from the Dynastic Repo](https://repo.dynastic.co/package/dev.jeffresc.songshare), or download and install it manually using the .deb file, which can be downloaded from the [GitHub releases section](https://github.com/JeffResc/SongShare/releases).
 
 # Changelog
 ## v1.0.0
