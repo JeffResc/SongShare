@@ -13,7 +13,7 @@ SongShare is an iOS tweak that will automatically detect when you’ve copied a 
 ## Supported Platforms
 | Platform            | SongLink (Default) | SongWhip |
 |---------------------|--------------------|----------|
-| Amazon/Amazon Music | ✓                  |          |
+| Amazon/Amazon Music | ✓                  | ✗        |
 | Apple Music         | ✓                  | ✗        |
 | Deezer              | ✓                  | ✓        |
 | Google Play         | ✓                  | ✓        |
