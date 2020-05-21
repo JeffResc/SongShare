@@ -9,6 +9,8 @@ Please report any issues to the [GitHub issues section](https://github.com/JeffR
 ## About
 SongShare is an iOS tweak that will automatically detect when you’ve copied a music URL to your clipboard and will automatically convert them to a [SongLink](https://odesli.co/) (or [SongWhip](https://songwhip.com/)). This allows you to easily share this new link with friends, who will be able to open the link and choose their streaming service of choice to open the song (or album) in.
 
+[View the video demos here](https://imgur.com/gallery/CBRSYx8)
+
 ## Supported Platforms
 | Platform            | SongLink (Default) | SongWhip |
 |---------------------|--------------------|----------|
