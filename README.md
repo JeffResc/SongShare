@@ -1,4 +1,3 @@
-[![Icon](https://github.com/JeffResc/SongShare/raw/master/songshareprefs/Resources/icon%402x.png)](#)
 # SongShare
 Easily share songs with friends!
 
