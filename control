@@ -1,0 +1,9 @@
+Package: dev.jeffresc.songshare
+Name: SongShare
+Depends: mobilesubstrate, ws.hbang.common (>= 1.14), com.cokepokes.libnotifications (>= 0.2-2)
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Easily share songs with friends!
+Maintainer: Jeff Rescignano
+Author: Jeff Rescignano
+Section: Tweaks
