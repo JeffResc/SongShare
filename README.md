@@ -35,3 +35,6 @@ You can either [Download SongShare for Free from the Dynastic Repo](https://repo
 # Changelog
 ## v1.0.0
 Initial release
+
+# Legal
+[SongShare Legal Notice](https://jeffresc.dev/legal/SongShare)
