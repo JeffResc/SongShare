@@ -8,7 +8,6 @@ TWEAK_NAME = SongShare
 SongShare_FILES = SongShare.xm
 SongShare_FRAMEWORKS = CoreServices
 SongShare_PRIVATE_FRAMEWORKS = UIKitCore
-SongShare_LIBRARIES = MobileGestalt
 SongShare_CFLAGS = -fobjc-arc
 SongShare_EXTRA_FRAMEWORKS += Cephei
 

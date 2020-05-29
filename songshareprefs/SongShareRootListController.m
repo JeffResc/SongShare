@@ -1,4 +1,4 @@
-#include "swcRootListController.h"
+#include "SongShareRootListController.h"
 #import <CepheiPrefs/HBAppearanceSettings.h>
 #import <Cephei/HBPreferences.h>
 #import <Preferences/PSSpecifier.h>
@@ -6,7 +6,7 @@
 #import <Cephei/HBRespringController.h>
 #include <spawn.h>
 
-@implementation swcRootListController
+@implementation SongShareRootListController
 
 - (NSArray *)specifiers {
 	if (!_specifiers) {
@@ -35,6 +35,10 @@
 
 - (void)twitterLink {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/JeffRescignano"]];
+}
+
+- (void)Website_Link {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://jeffresc.dev/"]];
 }
 
 - (void)sourceCode {

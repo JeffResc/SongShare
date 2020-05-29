@@ -5,7 +5,7 @@ include $(THEOS)/makefiles/common.mk
 ARCHS = armv7 arm64 arm64e
 
 BUNDLE_NAME = songshareprefs
-songshareprefs_FILES = swcRootListController.m zodiacs.m
+songshareprefs_FILES = SongShareRootListController.m zodiacs.m
 songshareprefs_INSTALL_PATH = /Library/PreferenceBundles
 songshareprefs_FRAMEWORKS = UIKit
 songshareprefs_PRIVATE_FRAMEWORKS = Preferences

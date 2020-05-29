@@ -269,10 +269,20 @@
 			<string>HBLinkTableCell</string>
 			<key>cell</key>
 			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Visit My Website 🌐</string>
+			<key>action</key>
+			<string>Website_Link</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
 			<key>action</key>
 			<string>donateViaPayPal</string>
 			<key>label</key>
-			<string>Donate 💵</string>
+			<string>Donate ❤️</string>
 		</dict>
 		<dict>
 			<key>cellClass</key>
