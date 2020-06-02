@@ -58,6 +58,7 @@ NSString *lastURL = nil;
     [enabledHosts addObject:@"(https?://(open|play).spotify.com/(track|artist|album)/[a-zA-Z0-9]+(/playlist/[a-zA-Z0-9]+|)|spotify:(track|artist|album):[a-zA-Z0-9]+(:playlist:[a-zA-Z0-9]+|))"];
   }
   if (enabledTidal) {
+    [enabledHosts addObject:@"(https?://)?(www\\.)?tidal.com/(track|album|artist)/[0-9]+(/?)"];
     [enabledHosts addObject:@"(https?://)?listen.tidal.com/(track|album|artist)/[0-9]+(/?)"];
   }
   if (enabledYandex) {
