@@ -128,8 +128,8 @@ NSString *lastURL = nil;
                     break;
                   }
                 }
-
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"SongShare" message:[NSString stringWithFormat:@"Would you like to add this URL to your clipboard?\n%@", newURLStr] preferredStyle:UIAlertControllerStyleAlert];
+                NSString *titleStr = [[[responseDictionary objectForKey:@"entitiesByUniqueId"] objectForKey:[responseDictionary objectForKey:@"entityUniqueId"]] objectForKey:@"title"];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"SongShare" message:[NSString stringWithFormat:@"Would you like to add this URL to your clipboard?\n\n%@\n\n%@", titleStr, newURLStr] preferredStyle:UIAlertControllerStyleAlert];
                 alertController.view.tintColor = UIColorFromRGB(0x3498db);
                 [alertController addAction:[UIAlertAction actionWithTitle:@"No, Thanks" style:UIAlertActionStyleCancel handler:nil]];
                 [alertController addAction:[UIAlertAction actionWithTitle:@"Add To Clipboard" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
