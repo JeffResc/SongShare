@@ -1,7 +1,7 @@
 # SongShare
 Easily share songs with friends!
 
-[![Banner](https://github.com/JeffResc/SongShare/raw/master/_assets/Banner.png)](#)
+[![Banner](https://github.com/JeffResc/SongShare/raw/master/_assets/Banner/Banner.png)](#)
 
 This tweak should be compatible with iOS 10 - iOS 13, but was only tested on iOS 13.3.
 Please report any issues to the [GitHub issues section](https://github.com/JeffResc/SongShare/issues) if it does not work on one of these versions.
