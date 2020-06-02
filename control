@@ -1,6 +1,6 @@
 Package: dev.jeffresc.songshare
 Name: SongShare
-Depends: mobilesubstrate, firmware (>=10.0), ws.hbang.common (>= 1.14), com.cokepokes.libnotifications (>= 0.2-2)
+Depends: mobilesubstrate, firmware (>=10.0), ws.hbang.common (>= 1.15.1), com.cokepokes.libnotifications (>= 0.3)
 Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Easily share songs with friends!
