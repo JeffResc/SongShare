@@ -101,32 +101,14 @@ NSString *lastURL = nil;
     //RLog(@"Requesting URL: %@", nsURL.absoluteString);
     NSMutableURLRequest *urlRequest;
     NSString *countryCode = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
-    switch(shareService) {
-      case 0:
-        urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://api.song.link/v1-alpha.1/links?url=%@&userCountry=%@", nsURL.absoluteString, countryCode]]];
-        [urlRequest setHTTPMethod:@"GET"];
-        break;
-      case 1:
-        urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://songwhip.com/?country=%@", countryCode]]];
-        [urlRequest setHTTPMethod:@"POST"];
-        NSData *data1 = [nsURL.absoluteString dataUsingEncoding:NSUTF8StringEncoding];
-        [urlRequest setHTTPBody:data1];
-        break;
-    }
+    urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://api.song.link/v1-alpha.1/links?url=%@&userCountry=%@", nsURL.absoluteString, countryCode]]];
+    [urlRequest setHTTPMethod:@"GET"];
     NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
       NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
       if(httpResponse.statusCode == 200) {
           NSError *parseError = nil;
           NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
-          NSString *newURLStr;
-          switch(shareService) {
-            case 0:
-              newURLStr = [responseDictionary objectForKey:@"pageUrl"];
-              break;
-            case 1:
-              newURLStr = [responseDictionary objectForKey:@"url"];
-              break;
-          }
+          NSString *newURLStr = [responseDictionary objectForKey:@"pageUrl"];
           if (newURLStr) {
             NSString *copyString;
             if (pasteOrigURL) {
@@ -146,6 +128,7 @@ NSString *lastURL = nil;
                     break;
                   }
                 }
+
                 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"SongShare" message:[NSString stringWithFormat:@"Would you like to add this URL to your clipboard?\n%@", newURLStr] preferredStyle:UIAlertControllerStyleAlert];
                 alertController.view.tintColor = UIColorFromRGB(0x3498db);
                 [alertController addAction:[UIAlertAction actionWithTitle:@"No, Thanks" style:UIAlertActionStyleCancel handler:nil]];
@@ -161,7 +144,7 @@ NSString *lastURL = nil;
         }
     }];
     [dataTask resume];
-  //} else {
+  } else {
     //RLog(@"Prevented user from requesting same URL twice...");
   }
 }
@@ -195,11 +178,11 @@ NSString *lastURL = nil;
       if (matchCount) {
         //RLog(@"Matched!");
         [self runAPICall:url];
-      //} else {
+      } else {
         //RLog(@"Not a match (%d/%d)", i, [regexArray count]);
       }
     }
-  //} else {
+  } else {
     //RLog(@"Not a URL, ignoring...");
   }
 }
@@ -218,7 +201,7 @@ NSString *lastURL = nil;
         NSString *result = [string substringWithRange:matchRange];
         [self validateURL:[NSURL URLWithString:result]];
     }
-  //} else {
+  } else {
     //RLog(@"No URLs found in string");
   }
 }
@@ -308,8 +291,6 @@ static void sendNotification() {
             //RLog(@"Injecting into %@", processName);
             %init;
             [SongShare addPasteboardObserver];
-          //} else {
-            //RLog(@"Not injecting into %@", processName);
           }
         }
       }

@@ -14,36 +14,6 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>Sharing Service</string>
-		</dict>
-		<dict>
-	    <key>cell</key>
-	    <string>PSLinkListCell</string>
-	    <key>default</key>
-	    <string>SongLink (Recommended)</string>
-	    <key>defaults</key>
-	    <string>dev.jeffresc.songshareprefs</string>
-	    <key>key</key>
-	    <string>shareService</string>
-	    <key>label</key>
-	    <string>Sharing Service</string>
-	    <key>detail</key>
-	    <string>PSListItemsController</string>
-	    <key>validValues</key>
-	    <array>
-					<string>0</string>
-					<string>1</string>
-	    </array>
-	    <key>validTitles</key>
-	    <array>
-				<string>SongLink (Recommended)</string>
-				<string>Songwhip</string>
-	    </array>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
 			<string>Settings</string>
 		</dict>
 		<dict>

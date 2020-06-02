@@ -7,26 +7,26 @@ This tweak should be compatible with iOS 10 - iOS 13, but was only tested on iOS
 Please report any issues to the [GitHub issues section](https://github.com/JeffResc/SongShare/issues) if it does not work on one of these versions.
 
 ## About
-SongShare is an iOS tweak that will automatically detect when you’ve copied a music URL to your clipboard and will automatically convert them to a [SongLink](https://odesli.co/) (or [SongWhip](https://songwhip.com/)). This allows you to easily share this new link with friends, who will be able to open the link and choose their streaming service of choice to open the song (or album) in.
+SongShare is an iOS tweak that will automatically detect when you’ve copied a music URL to your clipboard and will automatically convert them to a [SongLink](https://odesli.co/). This allows you to easily share this new link with friends, who will be able to open the link and choose their streaming service of choice to open the song (or album) in.
 
 [View the video demos here](https://imgur.com/gallery/CBRSYx8)
 
 ## Supported Platforms
-| Platform            | SongLink (Default) | SongWhip |
-|---------------------|--------------------|----------|
-| Amazon/Amazon Music | ✓                  | ✗        |
-| Apple Music         | ✓                  | ✗        |
-| Deezer              | ✓                  | ✓        |
-| Google Play         | ✓                  | ✓        |
-| Napster             | ✓                  | ✗        |
-| iTunes              | ✓                  | ✓        |
-| SoundCloud          | ✓                  | ✓        |
-| Spinrilla           | ✓                  | ✗        |
-| Spotify             | ✓                  | ✓        |
-| Tidal               | ✓                  | ✗        |
-| Yandex              | ✓                  | ✗        |
-| YouTube             | ✓                  | ✓        |
-| YouTube Music       | ✓                  | ✗        |
+| Platform            | Supported by SongLink |
+|---------------------|-----------------------|
+| Amazon/Amazon Music | ✓                     |
+| Apple Music         | ✓                     |
+| Deezer              | ✓                     |
+| Google Play         | ✓                     |
+| Napster             | ✓                     |
+| iTunes              | ✓                     |
+| SoundCloud          | ✓                     |
+| Spinrilla           | ✓                     |
+| Spotify             | ✓                     |
+| Tidal               | ✓                     |
+| Yandex              | ✓                     |
+| YouTube             | ✓                     |
+| YouTube Music       | ✓                     |
 
 ## Settings
 The available settings allow you to accept a prompt before the new link is copied, send a notification after the new link has been copied, only convert links while connected to Wi-Fi, and keep the original link in parentheses alongside the new link.
